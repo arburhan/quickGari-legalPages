@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delete Account - QuickGari</title>
+  <style>
+/* Public pages (Privacy, Terms, Delete Account) for Google Play */
+:root {
+  --bg: #f6f8f7;
+  --card: #ffffff;
+  --text: #1c2421;
+  --muted: #5b6763;
+  --line: #e2e8e5;
+  --brand: #00a86b;
+  --brand-dark: #007a4e;
+  --danger: #c62828;
+  --danger-bg: #fdecec;
+  --ok-bg: #e7f6ef;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header {
+  background: var(--brand);
+  color: #fff;
+  padding: 20px 16px;
+}
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+header a.brand { color: #fff; font-weight: 700; font-size: 20px; text-decoration: none; }
+header nav a { color: #fff; opacity: 0.9; margin-left: 14px; font-size: 14px; text-decoration: none; }
+header nav a:first-child { margin-left: 0; }
+header nav a:hover { opacity: 1; text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; }
+main { padding: 24px 16px 48px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px 24px;
+}
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+h2 { font-size: 19px; margin: 28px 0 8px; }
+p, li { color: var(--text); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: var(--brand-dark); }
+.note {
+  background: var(--ok-bg);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 16px 0;
+}
+.warn { background: var(--danger-bg); }
+form { display: grid; gap: 12px; margin-top: 12px; }
+label { font-weight: 600; font-size: 14px; }
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; }
+.check input { margin-top: 5px; }
+button {
+  background: var(--danger);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: wait; }
+#result { display: none; }
+footer { color: var(--muted); font-size: 13px; text-align: center; padding: 0 16px 32px; }
+@media (max-width: 520px) {
+  .card { padding: 20px 16px; }
+  h1 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="privacy-policy.html">QuickGari</a>
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="delete-account.html">Delete Account</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="card">
+      <h1>Delete your QuickGari account</h1>
+      <p class="updated">For passengers and drivers</p>
+
+      <h2>Option 1: From the app</h2>
+      <p>Open the QuickGari app, open the <strong>Menu</strong>, tap <strong>Settings</strong>, then
+        <strong>Delete Account</strong> and confirm.</p>
+
+      <h2>Option 2: Request by email</h2>
+      <p>If you cannot use the app, send an email from your account's email address to
+        <a href="mailto:quickgari@gmail.com?subject=Account%20deletion%20request">quickgari@gmail.com</a>
+        with the subject <strong>Account deletion request</strong>. Include the name and phone
+        number of your account. We will delete your account within 7 days and reply to confirm.</p>
+
+      <h2>When you cannot delete yet</h2>
+      <p>Your account cannot be deleted while you have:</p>
+      <ul>
+        <li>a booked trip that is not completed (trip OTP not verified)</li>
+        <li>a payment waiting for admin approval</li>
+        <li>a due service charge (drivers)</li>
+        <li>a driver payout that QuickGari has not paid yet (drivers)</li>
+      </ul>
+
+      <h2>What is deleted</h2>
+      <ul>
+        <li>Your name, email, phone number, password and profile photo</li>
+        <li>Your driving license, vehicle registration card and tax token photos</li>
+        <li>Your open ride requests, bids, return posts and shared vehicle posts (cancelled)</li>
+        <li>Your push notification tokens</li>
+      </ul>
+
+      <h2>What is kept</h2>
+      <p>Records of past trips and payments (date, route, fare, transaction ID) are kept
+        without your personal details for accounting, fraud prevention and legal reasons.
+        Chat messages you already sent stay visible to the other person as "Deleted User".
+        Deletion from the app happens immediately. See our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </div>
+  </main>
+  <footer>&copy; 2026 QuickGari</footer>
+
+</body>
+</html>
